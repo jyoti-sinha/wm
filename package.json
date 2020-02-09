@@ -15,19 +15,26 @@
     "@ngrx/store": "8.4.0",
     "core-js": "2.6.10",
     "dexie": "^2.0.4",
+    "express": "^4.17.1",
     "ngrx": "0.0.1-security",
     "ngrx-store-localstorage": "^8.0.0",
+    "path": "^0.12.7",
     "rxjs": "6.5.3",
     "tslib": "^1.10.0",
     "zone.js": "0.9.1"
   },
+  "engines": {
+    "node": "12.15.0",
+    "npm": "6.13.4"
+  },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --prod"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.10.0",
